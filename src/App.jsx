@@ -9,7 +9,7 @@ import BackToTop from './components/BackToTop';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/belfon">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
