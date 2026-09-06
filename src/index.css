@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #390099;
+  --color-brand-magenta: #9e0059;
+  --color-brand-pink: #ff0054;
+  --color-brand-black: #000000;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --color-purple: #390099;
+    --color-magenta: #9e0059;
+    --color-pink: #ff0054;
+    --color-black: #000000;
+  }
+  
+  body {
+    @apply text-slate-800 bg-slate-50 antialiased font-sans;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-brand-purple via-brand-magenta to-brand-pink;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #390099, #9e0059, #ff0054);
+}
